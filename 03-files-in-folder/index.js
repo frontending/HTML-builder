@@ -1,7 +1,6 @@
 const fs = require('fs')
 const path = require('path')
 const pathCurrent = path.join(__dirname, './secret-folder')
-console.log(pathCurrent)
 
 fs.readdir(pathCurrent, function (err, files) {
     for (let file of files) {
